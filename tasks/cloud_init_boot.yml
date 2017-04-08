@@ -60,16 +60,16 @@
       GOVC_PASSWORD: "{{ govc_password }}"
       GOVC_INSECURE: "{{ govc_insecure }}"
       GOVC_DATASTORE: "{{ govc_datastore }}"
-
-  - name: Reboot vm to establish new settings
-    command: "govc vm.power -r {{ inventory_hostname }}"
-    environment:
-      GOVC_HOST: "{{ govc_host }}"
-      GOVC_URL: "https://{{ govc_host }}/sdk"
-      GOVC_USERNAME: "{{ govc_username }}"
-      GOVC_PASSWORD: "{{ govc_password }}"
-      GOVC_INSECURE: "{{ govc_insecure }}"
-      GOVC_DATASTORE: "{{ govc_datastore }}"
+#
+#  - name: Reboot vm to establish new settings
+#    command: "govc vm.power -r {{ inventory_hostname }}"
+#    environment:
+#      GOVC_HOST: "{{ govc_host }}"
+#      GOVC_URL: "https://{{ govc_host }}/sdk"
+#      GOVC_USERNAME: "{{ govc_username }}"
+#      GOVC_PASSWORD: "{{ govc_password }}"
+#      GOVC_INSECURE: "{{ govc_insecure }}"
+#      GOVC_DATASTORE: "{{ govc_datastore }}"
 
   rescue:
 
